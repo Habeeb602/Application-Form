@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form onsubmit="success()">
+        <div id="heading">Application Form</div>
+        <div id="personal">
+            <div class="sub-heading">Personal details</div>
+            <div>
+                <label>Enter your name: </label>
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="mname" placeholder="Middle Name">
+                <input type="text" name="lname" placeholder="Last Name">
+            </div>
+            <div>
+                <label>Enter your age: </label>
+                <input type="number" name="age">
+            </div>
+            <div>
+                <label>Enter your DOB: </label>
+                <input type="date" name="dob">
+            </div>
+            <div>
+                <label>Enter your Mobile number: </label>
+                <input type="text" name="mnumber">
+            </div>
+            <div>
+                <label>Gender: </label>
+                <input type="radio" name="gender" id=""> Male
+                <input type="radio" name="gender" id=""> Female
+                <input type="radio" name="gender" id=""> Others
+            </div>
+            <div>
+                <label>Education: </label>
+                <input type="radio" name="education" id=""> 10<sup>th</sup>
+                <input type="radio" name="education" id=""> 12<sup>th</sup>
+                <input type="radio" name="education" id=""> Under-Graduate
+                <input type="radio" name="education" id=""> Post-Graduate 
+            </div>
+            <div>
+                <label>Address</label>
+                <div>
+                    <label for="">Line 1: </label>
+                    <input type="text" name="" id="">
+                </div>  
+                <div>
+                    <label for="">Line 2: </label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">City: </label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">State: </label>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <label for="">Pincode: </label>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <div>
+                <label for="">Upload resume: </label>
+                <input type="file" name="" id="">
+            </div>
+        </div>
+        <div id="employment">
+            <div class="sub-heading">
+                Employment Details
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="">I'm a fresher</label>
+            </div>
+            <div>
+                <label for="">Company: </label>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <label for="">Position: </label>
+                <input type="text" name="" id="">
+            </div>
+            <div>
+                <label for="">Joining Date: </label>
+                <input type="date" name="" id="">
+                <label for="">Relieving Date: </label>
+                <input type="date">
+            </div>
+        </div>
+        <div id="skills">
+            <div class="sub-heading">
+                Skills
+            </div>
+            <div>
+                <label for="">Rate your skills: </label>
+                <input type="range" name="" id="">
+                <div><label for="">C: </label><input type="checkbox" name="" id=""></div>
+                <div><label for="">C++: </label><input type="checkbox" name="" id=""></div>
+                <div><label for="">Java: </label><input type="checkbox" name="" id=""></div>
+                <div><label for="">Python: </label><input type="checkbox" name="" id=""></div>
+                <div><label for="">Upload any certifications: </label><input type="file" name="" id=""></div>
+            </div>
+        </div>
+        <div id="job">
+            <div class="sub-heading">Select Preferred Job Location</div>
+            <div><input type="radio" name="loc" id=""><label for="">Delhi</label></div>
+            <div><input type="radio" name="loc" id=""><label for="">Chennai</label></div>
+            <div><input type="radio" name="loc" id=""><label for="">Mumbai</label></div>
+            <div><input type="checkbox" name="" id=""><label for="">I agree to all terms and conditons</label></div>
+        </div>
+
+        <div id="btn">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+<script src="./script.js"></script>
+</html>
